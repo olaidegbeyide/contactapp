@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row d-flex mx-auto">
+                <div class="col">
+                    <button class="btn btn-success mb-3" id="add-btn">Add Contact</button>
+                    <form action="" class="fullContacts" id="fullContact">
+                        <div class="form">
+                            <label for="">Name</label>
+                            <input type="text" class="input-text" id="fname">
+                        </div>
+                        <div class="form">
+                            <label for="">Number</label>
+                            <input type="text" class="input-text" id="phonenum">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3" id="add" >Save</button>
+                    </form>
+                    <p id="error">Enter Details</p>
+                    <ul id="results"></ul>
+                </div>
+
+                <div class="col">
+                    <button class="btn btn-dark">Search Contacts</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+    <script src="js/popper.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
