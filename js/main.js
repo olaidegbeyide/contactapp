@@ -37,21 +37,17 @@ let save = document.getElementById('add');
 let myresult =  document.getElementById('results');
 function showContact() {
       myresult.innerHTML = ""
-   contacts.map((contact,index) => {
+   contacts.forEach((contact,index) => {
       myresult.innerHTML += `<li>${contact.fullName} ${contact.phoneNumber}</li>
-      <span><button class="btn btn-danger id="${index}">Delete</button></span>`
+      <span><button class="btn btn-danger" id="${index}" onClick="deleteContact()">Delete</button></span>`
    })
 
    
 }
 showContact()
  
-function deleteContact() {
-   
-      contacts -= `<li id="${index}">${contact.fullName} ${contact.phoneNumber}</li>`
-  
-      showContact();
+function deleteContact(index) {
+   contacts.splice(index, 1)
+
+   showContact()
 }
-
-deleteContact()
-
